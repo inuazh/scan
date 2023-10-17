@@ -1,0 +1,42 @@
+.footer { 
+  padding-left: 60px;
+  padding-right: 45px;
+  height: 137px;
+  background-color: #029491;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: -2px;
+  margin-bottom: -2px;
+  width: 141px;
+  height: 141px;
+}
+
+.footer_info {
+  margin-top: 25px;
+  text-align: right;
+}
+
+.footer_info_item {
+  margin-bottom: 2px;
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+}
+
+.footer_info_item:not(:first-child):hover {
+  color: #ffffff76;
+}
+
+.footer_copy {
+  margin-top: 19px;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  color: #fff;
+}
+
+

@@ -1,0 +1,21 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.head-nav {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  & .head-nav__link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+  }
+  & .head-nav__link:hover {
+    text-decoration: underline;
+  }
+}
+

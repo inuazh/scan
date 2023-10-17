@@ -1,0 +1,45 @@
+.main-container {
+  padding: var(--stand-padding);
+}
+
+.service-search {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 177px);
+}
+
+.service-search__heading {
+  font-family: "Arial";
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: var(--stand-letter-spacing);
+  margin: 0;
+}
+
+.service-search__description {
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: var(--stand-letter-spacing);
+  margin: 45px 0;
+  max-width: 65%;
+}
+
+.service-search__button {
+  cursor: pointer;
+  width: 45%;
+  height: 55px;
+  background-color: var(--stand-color-blue);
+  border: none;
+  border-radius: 4px;
+  transition: var(--stand-transition);
+}
+
+.service-search__button > a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: var(--stand-letter-spacing);
+}
+
+
+
