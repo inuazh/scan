@@ -14,8 +14,20 @@
     text-decoration: none;
     color: #000;
   }
-  & .head-nav__link:hover {
-    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .head-nav {
+    display: none;
   }
 }
 
+@media all and (max-width: 550px) {
+  .head {
+    padding: 10px;
+  }
+
+  .head-logo {
+    width: 80px;
+  }
+}

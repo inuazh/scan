@@ -4,11 +4,11 @@ import "./auth.css";
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import lock from "../../data/images/lock.svg";
+import padlock from "../../data/images/padlock.svg";
 import google from "../../data/images/google.svg";
 import facebook from "../../data/images/facebook.svg";
 import yandex from "../../data/images/yandex.svg";
-import store from "../store/store";
+import store from "../store";
 
 function Authorization() {
 
@@ -51,7 +51,7 @@ function Authorization() {
       <img className="auth-img" src={key} />
       
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
-      <img className="form-img__lock" src={lock} />
+      <img className="form-img__padlock" src={padlock} />
       <div className="form-links">
         <button className="form-link">
           <Link to="/auth">Войти</Link>

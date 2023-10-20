@@ -4,7 +4,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import NotAuthorized from "./Authorized/NotAuthorized/notAuthorized";
 import Burger from "./Burger/burger";
-import store from "../store/store";
+import store from "../store";
 import { observer } from "mobx-react-lite";
 import scan from "../../data/images/scan-logo.svg";
 import Authorized from "./Authorized/authorized";

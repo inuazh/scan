@@ -28,9 +28,7 @@
   letter-spacing: 0.14px;
 }
 
-.footer_info_item:not(:first-child):hover {
-  color: #ffffff76;
-}
+
 
 .footer_copy {
   margin-top: 19px;
@@ -39,4 +37,17 @@
   color: #fff;
 }
 
+@media screen and (max-width: 800px) {
+  .footer {
+      margin-left: -14px;
+      margin-right: -26px;
+      padding-left: 18px;
+      padding-right: 19px;
+  }
 
+  .logo {
+      margin-top: -12px;
+      width: 111px;
+      height: 111px;
+  }
+}

@@ -3,10 +3,10 @@ import "./carousel.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import time from "../../../data/images/time.svg";
+import clockpic from "../../../data/images/clockpic.svg";
 import search from "../../../data/images/search.svg";
 import safety from "../../../data/images/safety.svg";
-import happy from "../../../data/images/happy.svg";
+import smile_pic from "../../../data/images/smile_pic.svg";
 
 
 
@@ -55,7 +55,7 @@ export default function Slider_Main() {
   const slider = [
     {
       text: "Высокая и оперативная скорость обработки заявки",
-      img: time,
+      img: clockpic,
     },
 
     {
@@ -70,7 +70,7 @@ export default function Slider_Main() {
 
     {
       text: "99,99% процентов довольных клиентов, станьте одним из них!",
-      img: happy,
+      img: smile_pic,
     },
   ];
 

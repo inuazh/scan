@@ -1,12 +1,4 @@
-@font-face {
-  font-family: "Ferry";
-  src: url(./data/fonts/Ferry/ferry.ttf);
-}
 
-@font-face {
-  font-family: "Inter";
-  src: url(./data/fonts/Inter/inter.ttf);
-}
 
 * {
   margin: 0;
@@ -19,6 +11,16 @@ html {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   min-height: 100vh;
   max-width: 100vw;
+}
+
+@font-face {
+  font-family: "Ferry";
+  src: url(./data/fonts/Ferry/ferry.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./data/fonts/Inter/inter.ttf);
 }
 
 :root {

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import scan from "../../../data/images/scan-logo-footer.svg";
+import scan from "../../../data/images/scan-footer.svg";
 import userpic from "../../../data/images/userpic.png";
-import store from "../../store/store";
+import store from "../../store";
+import "./burger.css";
 import { observer } from "mobx-react-lite";
 
 

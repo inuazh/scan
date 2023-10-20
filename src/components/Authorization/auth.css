@@ -100,7 +100,7 @@
   transition: var(---stand-transition);
 }
 
-.form-img__lock {
+.form-img__padlock {
   position: absolute;
   top: -50px;
   left: -48px;
@@ -188,4 +188,88 @@
 }
 
 
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+  .form {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-top: 100px;
+  }
+
+  .form-img__padlock {
+    top: -74px;
+    left: 30%;
+  }
+
+  .form-link {
+    margin: 0px 10px 10px;
+    padding: 8px 5px;
+  }
+
+  .authorization {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    justify-items: center;
+  }
+
+  .auth__title {
+    width: 90%;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .auth-img {
+    max-width: 80%;
+    margin-left: 0%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .auth__title {
+    width: 85%;
+  }
+  .form {
+    max-width: 83%;
+  }
+
+  .sign-with {
+    align-self: center;
+  }
+
+  .sign-socials {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+  }
+}
 

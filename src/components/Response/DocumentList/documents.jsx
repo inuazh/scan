@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./documents.css";
-import store from "../../store/store";
+import store from "../../store";
 import { observer } from "mobx-react-lite";
 import { Link } from "react-router-dom";
 import Document from "./article/article";
@@ -13,7 +13,6 @@ const Documents = observer(() => {
     if (nextTen >= store.IDs.length) {
       setActive(false);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [nextTen]);
 
   useEffect(() => {
@@ -29,7 +28,6 @@ const Documents = observer(() => {
         setActive(true);
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [store.IDs]);
 
   const showNextTen = () => {

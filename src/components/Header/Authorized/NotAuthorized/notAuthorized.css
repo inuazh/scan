@@ -37,3 +37,11 @@
 }
 
 
+
+
+
+@media (max-width: 850px) {
+  .not-authorized {
+    display: none;
+  }
+}

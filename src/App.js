@@ -1,10 +1,11 @@
-import "./App.css";
-import Header from "./components/Header/header";
+
 import Main from "./components/Main/main";
+import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
-import Authorization from "./components/Authorization/auth";
 import Search from "./components/Search/SearchBuild";
 import Response from "./components/Response/Response";
+import Authorization from "./components/Authorization/auth";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const routesData = [

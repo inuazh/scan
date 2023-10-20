@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./TNN.css";
+import store from "../../store";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { observer } from "mobx-react-lite";

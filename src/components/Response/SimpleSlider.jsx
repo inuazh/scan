@@ -3,7 +3,7 @@ import "./Response.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import store from "../store/store";
+import store from "../store";
 import Loader from "../bide/bide";
 
 const settings = {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import scan from "../../data/images/scan-logo-footer.svg";
+import scan from "../../data/images/scan-footer.svg";
 
 const Footer = () => {
 

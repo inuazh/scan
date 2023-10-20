@@ -1,12 +1,12 @@
 import React from "react";
 import "./article.css"
 import { Link } from "react-router-dom";
-import mock from "../../../../data/images/mock-img.svg";
+import  scf from "../../../../data/images/scf-img.svg";
 
 const Article = (props) => {
   let imageUrl = "";
   if (props.content.match(/https?:\/\/\S+"/g) === null) {
-    imageUrl = mock;
+    imageUrl =  scf;
   } else {
     imageUrl = props.content
       .match(/https?:\/\/\S+"/g)

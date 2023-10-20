@@ -185,3 +185,48 @@ input[type="checkbox"]:checked {
 .search-loader {
   height: 57.75px; 
 }
+
+@media screen and (max-width: 1212px) {
+  .search-form {
+    flex-direction: column;
+    padding: 42px 21px; 
+  }
+
+  .search-form__button {
+    width: 100%;
+    margin-top: 26px;
+    align-self: center;
+  }
+  .form-button__submit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .search-form__checks {
+    display: none;
+  }
+
+  .search-form__inputs,
+  .search-form__label {
+    width: 100%;
+  }
+
+  .date-picker__label {
+    width: 52.5%; 
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .search-title {
+    font-size: var(--size-large); 
+    width: 100%;
+  }
+  .search-body {
+    flex-direction: column;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+}

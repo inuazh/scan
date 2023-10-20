@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./authorized.css";
 import { observer } from "mobx-react-lite";
+import store from "../../store";
 import avatar from "../../../data/images/userpic.png";
 import Loader from "../../bide/bide";
 import { Link } from "react-router-dom";

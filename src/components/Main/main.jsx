@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./main.css";
-import store from "../store/store";
-import service from "../../data/images/service.svg";
+import store from "../store";
+import two_window from "../../data/images/two_window.svg";
 import SimpleSlider from "./Carousel/carousel";
 import Rate from "./Rates/rate";
 import { observer } from "mobx-react-lite";
@@ -32,7 +32,7 @@ const Main = observer(() => {
           </div>
         </div>
         <div className="service-search__image">
-          <img className="service-image" src={service}  />
+          <img className="service-image" src={two_window}  />
         </div>
       </section>
       <section className="why-us">

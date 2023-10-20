@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Response.css";
-import store from "../store/store";
+import store from "../store";
 import target from "../../data/images/target.svg";
 import { observer } from "mobx-react-lite";
 import { useNavigate } from "react-router";

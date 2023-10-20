@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import "./rate.css";
-import beginner from "../../../data/images/beginner.svg";
-import pro from "../../../data/images/pro.svg";
-import business from "../../../data/images/business.svg";
-import checkpoint from "../../../data/images/checkpoint.svg";
-import store from "../../store/store";
+import el_lamp from "../../../data/images/el_lamp.svg";
+import darts_target from "../../../data/images/darts_target.svg";
+import laptop from "../../../data/images/laptop.svg";
+import checkmark from "../../../data/images/checkmark.svg";
+import store from "../../store";
 
 const Rate = observer(() => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const Rate = observer(() => {
       styleObj: { background: "var(--stand-color-yellow)" },
       id: 1,
       title: "Beginner",
-      image: beginner,
+      image: el_lamp,
       description: "Для небольшого исследования",
       price: "1 200 ₽",
       discount: "799 ₽",
@@ -34,13 +34,13 @@ const Rate = observer(() => {
       styleObj: { background: "var(--stand-color-light-green)" },
       id: 2,
       title: "Pro",
-      image: pro,
+      image: darts_target,
       description: "Для HR и фрилансеров",
       price: "2 600 ₽",
       discount: "1 299 ₽",
       loan: "или 279 ₽/мес. при рассрочке на 24 мес.",
       details: {
-        detail1: "Все пункты тарифа Beginner",
+        detail1: "Все пункты тарифа el_lamp",
         detail2: "Экспорт истории",
         detail3: "Рекомендации по приоритетам",
       },
@@ -48,8 +48,8 @@ const Rate = observer(() => {
     {
       styleObj: { background: "#000", color: "#fff" },
       id: 3,
-      title: "Business",
-      image: business,
+      title: "Buisness",
+      image: laptop,
       description: "Для корпоративных клиентов",
       price: "3 700 ₽",
       discount: "2 379 ₽",
@@ -62,7 +62,7 @@ const Rate = observer(() => {
     },
   ];
 
-
+ 
   const rateComponents = rates.map((item) => (
     <div className="rate" key={item.id}>
       <div className="rate-header" style={item.styleObj}>
@@ -84,7 +84,7 @@ const Rate = observer(() => {
         <p className="rate-info rate-info__title">В тариф входит:</p>
         {Object.values(item.details).map((detail, index) => (
           <li className="rate-info" key={index}>
-            <img className="rate-info__check" src={checkpoint} />
+            <img className="rate-info__check" src={checkmark} />
             {detail}
           </li>
         ))}
